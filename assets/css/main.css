@@ -1047,7 +1047,3 @@ body::after {
 }
 @media (prefers-reduced-motion: reduce) { body::after { display: none; } }
 /* ===== END OF STYLESHEET ===== */
-/* Mobile review layout */
-.reviews__inner > * { min-width: 0; }
-.review { min-width: 0; }
-@media (max-width: 559px) { .carousel { min-width: 0; } .review { flex-basis: min(86vw, 340px); } }
