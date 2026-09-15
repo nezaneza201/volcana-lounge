@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PLACEHOLDER ARTWORK — brochettes over the fire. Replace with a real photo. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" width="1600" height="1200" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="grBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B0908"/>
+      <stop offset="0.55" stop-color="#171210"/>
+      <stop offset="1" stop-color="#0A0807"/>
+    </linearGradient>
+    <radialGradient id="grBed" cx="0.5" cy="0.62" r="0.5">
+      <stop offset="0" stop-color="#FFC076" stop-opacity="0.9"/>
+      <stop offset="0.35" stop-color="#E2761F" stop-opacity="0.55"/>
+      <stop offset="0.7" stop-color="#8E3A12" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#5A2410" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="grHeat" cx="0.5" cy="0.6" r="0.6">
+      <stop offset="0" stop-color="#E28B3B" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#E28B3B" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="grMeat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8A4A24"/>
+      <stop offset="0.45" stop-color="#5E2F16"/>
+      <stop offset="1" stop-color="#33190D"/>
+    </linearGradient>
+    <filter id="grGrain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <radialGradient id="grVignette" cx="0.5" cy="0.55" r="0.72">
+      <stop offset="0.45" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.75"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="1200" fill="url(#grBg)"/>
+  <rect width="1600" height="1200" fill="url(#grHeat)"/>
+
+  <!-- ember bed -->
+  <g>
+    <ellipse cx="800" cy="820" rx="700" ry="230" fill="url(#grBed)"/>
+    <g fill="#F7A94F" opacity="0.75">
+      <ellipse cx="420" cy="812" rx="34" ry="12"/>
+      <ellipse cx="560" cy="846" rx="26" ry="9"/>
+      <ellipse cx="700" cy="800" rx="30" ry="11"/>
+      <ellipse cx="900" cy="840" rx="38" ry="12"/>
+      <ellipse cx="1080" cy="812" rx="28" ry="10"/>
+      <ellipse cx="1230" cy="852" rx="32" ry="11"/>
+    </g>
+    <g fill="#FFD9A0" opacity="0.5">
+      <ellipse cx="470" cy="792" rx="14" ry="5"/>
+      <ellipse cx="820" cy="836" rx="16" ry="6"/>
+      <ellipse cx="1150" cy="800" rx="12" ry="5"/>
+    </g>
+  </g>
+
+  <!-- grill bars -->
+  <g stroke="#0D0B0A" stroke-width="16" opacity="0.92">
+    <path d="M120 700 H1480"/>
+    <path d="M120 800 H1480"/>
+    <path d="M120 900 H1480"/>
+  </g>
+  <g stroke="#3A2A1E" stroke-width="3" opacity="0.6">
+    <path d="M120 692 H1480"/>
+    <path d="M120 792 H1480"/>
+    <path d="M120 892 H1480"/>
+  </g>
+
+  <!-- three skewers -->
+  <g transform="rotate(-9 800 700)">
+    <g stroke="#C9BFAE" stroke-width="6" opacity="0.75">
+      <path d="M180 660 H1420"/>
+      <path d="M180 790 H1420"/>
+      <path d="M180 920 H1420"/>
+    </g>
+    <g fill="url(#grMeat)">
+      <rect x="360" y="612" width="112" height="96" rx="14"/>
+      <rect x="520" y="612" width="112" height="96" rx="14"/>
+      <rect x="680" y="612" width="112" height="96" rx="14"/>
+      <rect x="840" y="612" width="112" height="96" rx="14"/>
+      <rect x="1000" y="612" width="112" height="96" rx="14"/>
+      <rect x="360" y="742" width="112" height="96" rx="14"/>
+      <rect x="520" y="742" width="112" height="96" rx="14"/>
+      <rect x="680" y="742" width="112" height="96" rx="14"/>
+      <rect x="840" y="742" width="112" height="96" rx="14"/>
+      <rect x="1000" y="742" width="112" height="96" rx="14"/>
+      <rect x="360" y="872" width="112" height="96" rx="14"/>
+      <rect x="520" y="872" width="112" height="96" rx="14"/>
+      <rect x="680" y="872" width="112" height="96" rx="14"/>
+      <rect x="840" y="872" width="112" height="96" rx="14"/>
+      <rect x="1000" y="872" width="112" height="96" rx="14"/>
+    </g>
+    <!-- sear highlights and char -->
+    <g fill="#B87A44" opacity="0.55">
+      <rect x="366" y="620" width="100" height="10" rx="5"/>
+      <rect x="526" y="750" width="100" height="10" rx="5"/>
+      <rect x="686" y="880" width="100" height="10" rx="5"/>
+      <rect x="846" y="620" width="100" height="10" rx="5"/>
+      <rect x="1006" y="750" width="100" height="10" rx="5"/>
+    </g>
+    <g fill="#1C0F08" opacity="0.6">
+      <ellipse cx="430" cy="686" rx="34" ry="10"/>
+      <ellipse cx="750" cy="816" rx="30" ry="9"/>
+      <ellipse cx="1070" cy="946" rx="32" ry="10"/>
+      <ellipse cx="590" cy="946" rx="26" ry="8"/>
+    </g>
+  </g>
+
+  <!-- smoke wisps -->
+  <g stroke="#E9DCC4" fill="none" opacity="0.1" stroke-linecap="round">
+    <path d="M420 560 q60 -90 20 -180 q-30 -70 40 -140" stroke-width="16"/>
+    <path d="M820 520 q70 -110 10 -200 q-40 -70 30 -150" stroke-width="20"/>
+    <path d="M1180 570 q50 -80 10 -160 q-28 -64 34 -128" stroke-width="14"/>
+  </g>
+
+  <!-- rising sparks -->
+  <g fill="#F3B171" opacity="0.6">
+    <circle cx="560" cy="470" r="2.6"/>
+    <circle cx="700" cy="380" r="2"/>
+    <circle cx="980" cy="440" r="2.4"/>
+    <circle cx="1120" cy="350" r="1.8"/>
+    <circle cx="820" cy="300" r="2.2"/>
+  </g>
+
+  <rect width="1600" height="1200" fill="url(#grVignette)"/>
+  <rect width="1600" height="1200" filter="url(#grGrain)" opacity="0.06" style="mix-blend-mode:overlay"/>
+  <text x="1560" y="1166" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="14"
+        letter-spacing="3.5" fill="#B6AB9E" opacity="0.42">PLACEHOLDER ARTWORK · REPLACE WITH OFFICIAL PHOTO</text>
+</svg>

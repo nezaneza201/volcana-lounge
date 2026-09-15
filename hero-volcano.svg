@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  PLACEHOLDER ARTWORK — Volcana Lounge hero image
+  ---------------------------------------------------------------------------
+  This is a hand-drawn stand-in so the layout looks finished before the
+  restaurant supplies photography. Replace it by dropping your own photo next
+  to it (see IMAGE-GUIDE.md) — the website automatically prefers real photos
+  over this file. Do not treat this artwork as a photograph of the venue.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="heroSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0A0908"/>
+      <stop offset="0.32" stop-color="#1B1512"/>
+      <stop offset="0.55" stop-color="#3A2415"/>
+      <stop offset="0.7" stop-color="#7A411C"/>
+      <stop offset="0.8" stop-color="#C2701F"/>
+      <stop offset="0.88" stop-color="#8A4A1E"/>
+      <stop offset="1" stop-color="#12100E"/>
+    </linearGradient>
+    <radialGradient id="heroSun" cx="0.63" cy="0.79" r="0.42">
+      <stop offset="0" stop-color="#F3B171" stop-opacity="0.9"/>
+      <stop offset="0.35" stop-color="#E28B3B" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#E28B3B" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="heroFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4B3A2C"/>
+      <stop offset="1" stop-color="#231C17"/>
+    </linearGradient>
+    <linearGradient id="heroMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#241D18"/>
+      <stop offset="1" stop-color="#15110F"/>
+    </linearGradient>
+    <linearGradient id="heroNear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#120F0D"/>
+      <stop offset="1" stop-color="#0A0908"/>
+    </linearGradient>
+    <linearGradient id="heroMist" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E28B3B" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#E7C39A" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#E28B3B" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="heroGrain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.78" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <radialGradient id="heroVignette" cx="0.5" cy="0.55" r="0.78">
+      <stop offset="0.55" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.62"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#heroSky)"/>
+  <rect width="1920" height="1080" fill="url(#heroSun)"/>
+
+  <!-- high cloud bands -->
+  <g fill="#E7C39A" opacity="0.09">
+    <ellipse cx="420" cy="300" rx="420" ry="26"/>
+    <ellipse cx="1180" cy="238" rx="520" ry="20"/>
+    <ellipse cx="860" cy="392" rx="600" ry="18"/>
+    <ellipse cx="1620" cy="330" rx="380" ry="22"/>
+  </g>
+
+  <!-- distant volcano chain -->
+  <path fill="url(#heroFar)" opacity="0.85"
+    d="M0 660 L150 660 L300 500 L420 660 L520 660 L640 470 L760 660 L900 660 L1000 540 L1100 660 L1250 660 L1400 430 L1520 660 L1700 660 L1800 520 L1920 660 L1920 1080 L0 1080 Z"/>
+  <rect x="0" y="586" width="1920" height="130" fill="url(#heroMist)"/>
+
+  <!-- mid ridge -->
+  <path fill="url(#heroMid)"
+    d="M0 760 L120 760 L300 590 L470 760 L600 760 L780 548 L980 760 L1180 760 L1380 616 L1560 760 L1760 760 L1920 676 L1920 1080 L0 1080 Z"/>
+  <rect x="0" y="700" width="1920" height="120" fill="url(#heroMist)" opacity="0.7"/>
+
+  <!-- near hills -->
+  <path fill="url(#heroNear)"
+    d="M0 900 L260 858 L560 900 L820 838 L1120 892 L1420 828 L1700 886 L1920 844 L1920 1080 L0 1080 Z"/>
+
+  <!-- distant warm lights, suggestive of the town beyond the hills -->
+  <g fill="#F3B171">
+    <circle cx="392" cy="880" r="3" opacity="0.5"/>
+    <circle cx="446" cy="888" r="2.4" opacity="0.4"/>
+    <circle cx="1188" cy="874" r="2.8" opacity="0.45"/>
+    <circle cx="1240" cy="882" r="2.2" opacity="0.35"/>
+    <circle cx="1596" cy="868" r="2.6" opacity="0.4"/>
+  </g>
+  <g fill="#E28B3B" opacity="0.16">
+    <ellipse cx="420" cy="884" rx="90" ry="26"/>
+    <ellipse cx="1212" cy="878" rx="86" ry="24"/>
+    <ellipse cx="1600" cy="872" rx="70" ry="20"/>
+  </g>
+
+  <rect width="1920" height="1080" fill="url(#heroVignette)"/>
+  <rect width="1920" height="1080" filter="url(#heroGrain)" opacity="0.055" style="mix-blend-mode:overlay"/>
+
+  <text x="1870" y="1050" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="15"
+        letter-spacing="4" fill="#B6AB9E" opacity="0.4">PLACEHOLDER ARTWORK · REPLACE WITH OFFICIAL PHOTO</text>
+</svg>

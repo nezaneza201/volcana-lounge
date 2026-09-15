@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PLACEHOLDER ARTWORK — guests at a candlelit table. Replace with a real photo. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" width="1600" height="1100" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="gtRoom" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1B1410"/>
+      <stop offset="0.6" stop-color="#120E0C"/>
+      <stop offset="1" stop-color="#0A0807"/>
+    </linearGradient>
+    <radialGradient id="gtCandle" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFDDAB" stop-opacity="0.95"/>
+      <stop offset="0.4" stop-color="#E28B3B" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#E28B3B" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gtTable" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A2A1E"/>
+      <stop offset="1" stop-color="#150F0C"/>
+    </linearGradient>
+    <radialGradient id="gtBokeh" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#E28B3B" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#E28B3B" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="gtGrain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.86" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <radialGradient id="gtVignette" cx="0.5" cy="0.52" r="0.72">
+      <stop offset="0.45" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.78"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="1100" fill="url(#gtRoom)"/>
+
+  <!-- soft background bokeh: warm room lights -->
+  <g>
+    <circle cx="240" cy="300" r="120" fill="url(#gtBokeh)"/>
+    <circle cx="560" cy="210" r="90" fill="url(#gtBokeh)" opacity="0.7"/>
+    <circle cx="1080" cy="260" r="140" fill="url(#gtBokeh)" opacity="0.8"/>
+    <circle cx="1420" cy="330" r="100" fill="url(#gtBokeh)" opacity="0.6"/>
+  </g>
+
+  <!-- seated guests, silhouettes in warm rim light -->
+  <g fill="#0D0B0A" opacity="0.94">
+    <path d="M300 700 q0 -170 120 -170 q120 0 120 170 z"/>
+    <path d="M520 690 q0 -190 130 -190 q132 0 132 190 z"/>
+    <path d="M800 690 q0 -190 130 -190 q132 0 132 190 z"/>
+    <path d="M1090 700 q0 -170 120 -170 q120 0 120 170 z"/>
+  </g>
+  <g fill="#4A3626" opacity="0.5">
+    <circle cx="420" cy="512" r="60"/>
+    <circle cx="650" cy="498" r="62"/>
+    <circle cx="930" cy="498" r="62"/>
+    <circle cx="1210" cy="512" r="60"/>
+  </g>
+  <g fill="#6B4A32" opacity="0.35">
+    <path d="M384 470 q36 -44 72 0 q-34 20 -72 0 z"/>
+    <path d="M614 456 q36 -44 72 0 q-34 20 -72 0 z"/>
+    <path d="M894 456 q36 -44 72 0 q-34 20 -72 0 z"/>
+    <path d="M1174 470 q36 -44 72 0 q-34 20 -72 0 z"/>
+  </g>
+
+  <!-- table -->
+  <rect x="0" y="700" width="1600" height="400" fill="url(#gtTable)"/>
+  <rect x="0" y="700" width="1600" height="10" fill="#5A4028" opacity="0.35"/>
+
+  <!-- table settings -->
+  <g>
+    <g fill="#D9CDBD" opacity="0.7">
+      <ellipse cx="420" cy="760" rx="86" ry="16"/>
+      <ellipse cx="800" cy="750" rx="86" ry="16"/>
+      <ellipse cx="1180" cy="760" rx="86" ry="16"/>
+    </g>
+    <g fill="#E8DDC8" opacity="0.55">
+      <ellipse cx="420" cy="756" rx="52" ry="10"/>
+      <ellipse cx="800" cy="746" rx="52" ry="10"/>
+      <ellipse cx="1180" cy="756" rx="52" ry="10"/>
+    </g>
+    <!-- wine glasses -->
+    <g fill="none" stroke="#E6D6BE" stroke-width="4" opacity="0.6">
+      <path d="M520 700 v-52 q0 -18 16 -18 q16 0 16 18 v52"/>
+      <path d="M1030 700 v-46 q0 -16 15 -16 q15 0 15 16 v46"/>
+    </g>
+    <g fill="#7A1F2E" opacity="0.55">
+      <path d="M524 668 q12 -12 24 0 v-12 q-12 -8 -24 0 z"/>
+      <path d="M1034 674 q11 -10 22 0 v-10 q-11 -7 -22 0 z"/>
+    </g>
+    <!-- candles -->
+    <g>
+      <rect x="792" y="640" width="16" height="60" fill="#E6D6BE" opacity="0.9"/>
+      <circle cx="800" cy="628" r="120" fill="url(#gtCandle)" opacity="0.85"/>
+      <path d="M800 610 q10 14 0 22 q-10 -8 0 -22 z" fill="#FFE6BE"/>
+      <rect x="196" y="656" width="13" height="50" fill="#DCCBB0" opacity="0.75"/>
+      <circle cx="202" cy="648" r="90" fill="url(#gtCandle)" opacity="0.6"/>
+      <rect x="1380" y="656" width="13" height="50" fill="#DCCBB0" opacity="0.75"/>
+      <circle cx="1386" cy="648" r="90" fill="url(#gtCandle)" opacity="0.6"/>
+    </g>
+    <!-- cutlery glints -->
+    <g fill="#C8A15A" opacity="0.45">
+      <rect x="342" y="742" width="8" height="46" rx="4"/>
+      <rect x="358" y="742" width="8" height="46" rx="4"/>
+      <rect x="1112" y="742" width="8" height="46" rx="4"/>
+      <rect x="1128" y="742" width="8" height="46" rx="4"/>
+    </g>
+  </g>
+
+  <rect width="1600" height="1100" fill="url(#gtVignette)"/>
+  <rect width="1600" height="1100" filter="url(#gtGrain)" opacity="0.06" style="mix-blend-mode:overlay"/>
+  <text x="1560" y="1066" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="14"
+        letter-spacing="3.5" fill="#B6AB9E" opacity="0.4">PLACEHOLDER ARTWORK · REPLACE WITH OFFICIAL PHOTO</text>
+</svg>

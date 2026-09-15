@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PLACEHOLDER ARTWORK — warm interior. Replace with a real photo of the room. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="intWall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#231A14"/>
+      <stop offset="0.55" stop-color="#191310"/>
+      <stop offset="1" stop-color="#0D0B09"/>
+    </linearGradient>
+    <linearGradient id="intFloor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1E1510"/>
+      <stop offset="1" stop-color="#0A0807"/>
+    </linearGradient>
+    <linearGradient id="intWindow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2A1C13"/>
+      <stop offset="0.7" stop-color="#7A4318"/>
+      <stop offset="1" stop-color="#C2701F"/>
+    </linearGradient>
+    <radialGradient id="intLamp" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFD9A8" stop-opacity="0.95"/>
+      <stop offset="0.35" stop-color="#E28B3B" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#E28B3B" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="intCone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFC98A" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#FFC98A" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="intGrain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <radialGradient id="intVignette" cx="0.5" cy="0.5" r="0.75">
+      <stop offset="0.5" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.7"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#intWall)"/>
+
+  <!-- stone wall coursing -->
+  <g stroke="#0B0908" stroke-width="3" opacity="0.55">
+    <path d="M0 300 H1920 M0 430 H1920 M0 560 H1920 M0 690 H1920"/>
+    <path d="M180 300 V430 M470 300 V430 M760 300 V430 M1060 300 V430 M1360 300 V430 M1660 300 V430"/>
+    <path d="M300 430 V560 M620 430 V560 M930 430 V560 M1240 430 V560 M1540 430 V560 M1820 430 V560"/>
+  </g>
+  <g fill="#2E231B" opacity="0.32">
+    <rect x="186" y="306" width="278" height="118" rx="6"/>
+    <rect x="476" y="436" width="312" height="118" rx="6"/>
+    <rect x="1066" y="306" width="288" height="118" rx="6"/>
+    <rect x="1370" y="436" width="264" height="118" rx="6"/>
+  </g>
+
+  <!-- window with dusk view -->
+  <g>
+    <rect x="1290" y="150" width="520" height="380" fill="url(#intWindow)" opacity="0.9"/>
+    <path d="M1290 430 L1410 350 L1520 420 L1650 330 L1810 430 L1810 530 L1290 530 Z" fill="#100D0B" opacity="0.85"/>
+    <rect x="1290" y="150" width="520" height="380" fill="none" stroke="#3A2C22" stroke-width="8"/>
+    <path d="M1550 150 V530 M1290 340 H1810" stroke="#3A2C22" stroke-width="6"/>
+  </g>
+
+  <!-- pendant lights -->
+  <g>
+    <g stroke="#4A382B" stroke-width="3">
+      <path d="M400 0 V180 M840 0 V250 M1240 0 V120"/>
+    </g>
+    <g fill="#2A1E17">
+      <path d="M340 180 h120 l-26 46 h-68 z"/>
+      <path d="M780 250 h120 l-26 46 h-68 z"/>
+      <path d="M1180 120 h120 l-26 46 h-68 z"/>
+    </g>
+    <circle cx="400" cy="238" r="150" fill="url(#intLamp)" opacity="0.75"/>
+    <circle cx="840" cy="308" r="170" fill="url(#intLamp)" opacity="0.7"/>
+    <circle cx="1240" cy="178" r="140" fill="url(#intLamp)" opacity="0.6"/>
+    <path d="M300 232 L500 232 L620 700 L180 700 Z" fill="url(#intCone)"/>
+    <path d="M740 302 L940 302 L1080 760 L600 760 Z" fill="url(#intCone)" opacity="0.8"/>
+  </g>
+
+  <!-- floor -->
+  <rect x="0" y="760" width="1920" height="320" fill="url(#intFloor)"/>
+  <g stroke="#2A2019" stroke-width="2" opacity="0.5">
+    <path d="M0 812 H1920 M0 878 H1920 M0 950 H1920 M0 1030 H1920"/>
+  </g>
+
+  <!-- dining table with settings -->
+  <g>
+    <rect x="300" y="770" width="1320" height="34" rx="6" fill="#3A2A1E"/>
+    <rect x="300" y="800" width="1320" height="14" fill="#1B130E"/>
+    <g fill="#26190F" opacity="0.95">
+      <rect x="420" y="814" width="26" height="180"/>
+      <rect x="1480" y="814" width="26" height="180"/>
+    </g>
+    <g fill="#D9CDBD" opacity="0.85">
+      <ellipse cx="620" cy="766" rx="76" ry="12"/>
+      <ellipse cx="1300" cy="766" rx="76" ry="12"/>
+    </g>
+    <g fill="#E28B3B" opacity="0.75">
+      <circle cx="620" cy="760" r="3"/>
+      <circle cx="1300" cy="760" r="3"/>
+    </g>
+    <g fill="#C8A15A" opacity="0.5">
+      <path d="M880 750 l10 16 h-20 z"/>
+      <path d="M1040 750 l10 16 h-20 z"/>
+    </g>
+    <ellipse cx="960" cy="742" rx="34" ry="10" fill="#F0C48A" opacity="0.35"/>
+  </g>
+
+  <!-- warm bokeh in the air -->
+  <g fill="#E28B3B" opacity="0.16">
+    <circle cx="240" cy="420" r="26"/>
+    <circle cx="1620" cy="600" r="20"/>
+    <circle cx="1120" cy="430" r="14"/>
+    <circle cx="520" cy="640" r="18"/>
+    <circle cx="1760" cy="300" r="16"/>
+  </g>
+
+  <rect width="1920" height="1080" fill="url(#intVignette)"/>
+  <rect width="1920" height="1080" filter="url(#intGrain)" opacity="0.06" style="mix-blend-mode:overlay"/>
+  <text x="1870" y="1046" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="15"
+        letter-spacing="4" fill="#B6AB9E" opacity="0.42">PLACEHOLDER ARTWORK · REPLACE WITH OFFICIAL PHOTO</text>
+</svg>

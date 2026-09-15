@@ -1,0 +1,21 @@
+{
+  "name": "Volcana Lounge — Restaurant & Lounge in Musanze",
+  "short_name": "Volcana Lounge",
+  "description": "Wood-fired pizza, local and international dishes and a warm welcome in Musanze, Rwanda. Open daily 11:30 AM – 11:00 PM.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0B0A09",
+  "theme_color": "#0B0A09",
+  "lang": "en-RW",
+  "categories": ["food", "restaurant", "travel"],
+  "icons": [
+    {
+      "src": "assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

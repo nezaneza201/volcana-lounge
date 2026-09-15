@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PLACEHOLDER ARTWORK — balcony / terrace seating. Replace with a real photo. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="terSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B0A09"/>
+      <stop offset="0.4" stop-color="#241C15"/>
+      <stop offset="0.66" stop-color="#6E3E1B"/>
+      <stop offset="0.8" stop-color="#C2701F"/>
+      <stop offset="1" stop-color="#100E0C"/>
+    </linearGradient>
+    <radialGradient id="terGlow" cx="0.36" cy="0.7" r="0.4">
+      <stop offset="0" stop-color="#F5C48C" stop-opacity="0.75"/>
+      <stop offset="0.45" stop-color="#E28B3B" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#E28B3B" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="terHills" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#31261C"/>
+      <stop offset="1" stop-color="#141110"/>
+    </linearGradient>
+    <linearGradient id="terDeck" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2B1F16"/>
+      <stop offset="1" stop-color="#0B0908"/>
+    </linearGradient>
+    <radialGradient id="terLantern" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFDBAC" stop-opacity="0.95"/>
+      <stop offset="0.4" stop-color="#E28B3B" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#E28B3B" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="terGrain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.84" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <radialGradient id="terVignette" cx="0.5" cy="0.5" r="0.76">
+      <stop offset="0.52" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.68"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#terSky)"/>
+  <rect width="1920" height="1080" fill="url(#terGlow)"/>
+
+  <!-- layered hills beyond the railing -->
+  <path fill="url(#terHills)" opacity="0.85"
+    d="M0 560 L170 560 L330 430 L480 560 L640 560 L810 400 L980 560 L1160 560 L1330 460 L1500 560 L1700 560 L1840 490 L1920 560 L1920 760 L0 760 Z"/>
+  <rect x="0" y="520" width="1920" height="140" fill="#F0C9A0" opacity="0.1"/>
+  <path fill="#100D0B" opacity="0.9"
+    d="M0 660 L220 628 L470 664 L720 610 L990 660 L1240 604 L1500 656 L1740 616 L1920 652 L1920 800 L0 800 Z"/>
+
+  <!-- distant town lights -->
+  <g fill="#F3B171" opacity="0.55">
+    <circle cx="300" cy="700" r="2.6"/>
+    <circle cx="352" cy="706" r="2"/>
+    <circle cx="1240" cy="694" r="2.4"/>
+    <circle cx="1298" cy="700" r="1.9"/>
+    <circle cx="1690" cy="690" r="2.2"/>
+  </g>
+
+  <!-- planters and foliage along the railing -->
+  <g fill="#101410">
+    <rect x="60" y="742" width="300" height="120" rx="8"/>
+    <rect x="1560" y="742" width="300" height="120" rx="8"/>
+  </g>
+  <g fill="#16201A">
+    <path d="M110 742 q60 -150 170 -170 q-40 90 -60 170 z"/>
+    <path d="M220 742 q30 -190 150 -230 q-20 120 -30 230 z"/>
+    <path d="M1620 742 q-40 -160 -150 -190 q30 100 50 190 z"/>
+    <path d="M1740 742 q10 -180 -110 -220 q10 130 -10 220 z"/>
+  </g>
+
+  <!-- lantern with warm glow -->
+  <g>
+    <path d="M1520 0 V120" stroke="#3A2C22" stroke-width="3"/>
+    <path d="M1470 120 h100 l-14 26 h-72 z" fill="#241A14"/>
+    <rect x="1478" y="146" width="84" height="110" rx="8" fill="#2B1F17"/>
+    <rect x="1486" y="154" width="68" height="94" rx="6" fill="#F3C28A" opacity="0.55"/>
+    <circle cx="1520" cy="200" r="230" fill="url(#terLantern)" opacity="0.5"/>
+  </g>
+
+  <!-- deck floor -->
+  <rect x="0" y="820" width="1920" height="260" fill="url(#terDeck)"/>
+  <g stroke="#2C211A" stroke-width="2" opacity="0.6">
+    <path d="M0 872 H1920 M0 936 H1920 M0 1010 H1920 M0 1080 H1920"/>
+  </g>
+
+  <!-- terrace table and chairs -->
+  <g>
+    <rect x="700" y="812" width="540" height="26" rx="6" fill="#3B2A1E"/>
+    <rect x="700" y="836" width="540" height="12" fill="#1A120D"/>
+    <rect x="940" y="848" width="24" height="176" fill="#241812"/>
+    <g fill="#241812">
+      <path d="M560 812 h34 v212 h-34 z"/>
+      <path d="M560 812 q-30 -60 10 -74 q30 30 24 74 z"/>
+      <path d="M1346 812 h34 v212 h-34 z"/>
+      <path d="M1346 812 q30 -60 -10 -74 q-30 30 -24 74 z"/>
+    </g>
+    <!-- candle on the table -->
+    <rect x="958" y="782" width="14" height="30" fill="#E6D6BE" opacity="0.85"/>
+    <circle cx="965" cy="772" r="46" fill="url(#terLantern)" opacity="0.7"/>
+  </g>
+
+  <rect width="1920" height="1080" fill="url(#terVignette)"/>
+  <rect width="1920" height="1080" filter="url(#terGrain)" opacity="0.06" style="mix-blend-mode:overlay"/>
+  <text x="1870" y="1046" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="15"
+        letter-spacing="4" fill="#B6AB9E" opacity="0.42">PLACEHOLDER ARTWORK · REPLACE WITH OFFICIAL PHOTO</text>
+</svg>

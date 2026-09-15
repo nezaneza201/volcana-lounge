@@ -1,0 +1,12 @@
+# Volcana Lounge — robots.txt
+# Replace the domain below with the live address before launch.
+
+User-agent: *
+Allow: /
+Disallow: /assets/docs/internal/
+
+# Keep the placeholder artwork out of image search results until it is replaced
+User-agent: Googlebot-Image
+Disallow: /assets/img/*.svg
+
+Sitemap: https://volcanalounge.rw/sitemap.xml

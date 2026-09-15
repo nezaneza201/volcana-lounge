@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PLACEHOLDER ARTWORK — chocolate mousse. Replace with a real photo. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="dmTable" cx="0.5" cy="0.45" r="0.75">
+      <stop offset="0" stop-color="#241C17"/>
+      <stop offset="0.65" stop-color="#141110"/>
+      <stop offset="1" stop-color="#090807"/>
+    </radialGradient>
+    <linearGradient id="dmGlass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3A2F26" stop-opacity="0.9"/>
+      <stop offset="0.18" stop-color="#6A5A4A" stop-opacity="0.5"/>
+      <stop offset="0.5" stop-color="#241C16" stop-opacity="0.35"/>
+      <stop offset="0.85" stop-color="#7A6653" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#332A22" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="dmMousse" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6B3F26"/>
+      <stop offset="0.45" stop-color="#4A2A18"/>
+      <stop offset="1" stop-color="#2A1710"/>
+    </linearGradient>
+    <linearGradient id="dmCream" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6E7CD"/>
+      <stop offset="1" stop-color="#DCC4A2"/>
+    </linearGradient>
+    <radialGradient id="dmLight" cx="0.72" cy="0.28" r="0.6">
+      <stop offset="0" stop-color="#F0B372" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#E28B3B" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="dmGrain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <filter id="dmShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <radialGradient id="dmVignette" cx="0.5" cy="0.5" r="0.72">
+      <stop offset="0.5" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.7"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="1200" fill="url(#dmTable)"/>
+  <rect width="1200" height="1200" fill="url(#dmLight)"/>
+
+  <!-- soft table shadow -->
+  <ellipse cx="600" cy="980" rx="300" ry="60" fill="#000000" opacity="0.55" filter="url(#dmShadow)"/>
+
+  <!-- glass -->
+  <g>
+    <path d="M430 470 h340 l-34 470 q-4 54 -60 54 h-152 q-56 0 -60 -54 z" fill="url(#dmGlass)"/>
+    <path d="M448 560 h304 l-28 380 q-3 44 -50 44 h-148 q-47 0 -50 -44 z" fill="url(#dmMousse)"/>
+    <!-- layers -->
+    <path d="M452 700 h296 l-6 84 h-284 z" fill="#8A5730" opacity="0.35"/>
+    <path d="M458 820 h284 l-8 106 h-268 z" fill="#1E100A" opacity="0.5"/>
+    <!-- whipped cream -->
+    <path d="M448 560 q60 -70 150 -70 q92 0 154 70 q-70 34 -152 34 q-84 0 -152 -34 z" fill="url(#dmCream)"/>
+    <path d="M540 512 q40 -46 100 -46 q62 0 100 46 q-48 26 -100 26 q-54 0 -100 -26 z" fill="#FFF6E6" opacity="0.75"/>
+    <!-- chocolate shard -->
+    <path d="M600 470 l44 -132 l40 136 z" fill="#3A1F12"/>
+    <path d="M608 466 l34 -104 l30 106 z" fill="#5A3018" opacity="0.85"/>
+    <!-- cocoa dusting -->
+    <g fill="#3E2517" opacity="0.65">
+      <circle cx="520" cy="556" r="3"/>
+      <circle cx="560" cy="540" r="2.4"/>
+      <circle cx="612" cy="548" r="2.8"/>
+      <circle cx="668" cy="536" r="2.2"/>
+      <circle cx="712" cy="552" r="3"/>
+    </g>
+    <!-- glass rim and highlights -->
+    <path d="M430 470 h340" stroke="#E6D6BE" stroke-width="3" opacity="0.5"/>
+    <path d="M462 520 q-6 200 12 380" stroke="#FFF3DF" stroke-width="7" opacity="0.14" stroke-linecap="round" fill="none"/>
+    <path d="M742 540 q6 170 -8 340" stroke="#FFF3DF" stroke-width="5" opacity="0.1" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- spoon on the table -->
+  <g transform="rotate(-18 900 1010)">
+    <ellipse cx="880" cy="1010" rx="46" ry="30" fill="#B7A992" opacity="0.45"/>
+    <rect x="920" y="998" width="220" height="16" rx="8" fill="#B7A992" opacity="0.4"/>
+  </g>
+
+  <!-- scattered cocoa / crumbs -->
+  <g fill="#8A6A4C" opacity="0.3">
+    <circle cx="330" cy="960" r="2.6"/>
+    <circle cx="286" cy="1000" r="2"/>
+    <circle cx="1020" cy="920" r="2.4"/>
+    <circle cx="1080" cy="980" r="1.8"/>
+  </g>
+
+  <rect width="1200" height="1200" fill="url(#dmVignette)"/>
+  <rect width="1200" height="1200" filter="url(#dmGrain)" opacity="0.06" style="mix-blend-mode:overlay"/>
+  <text x="1160" y="1166" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="13"
+        letter-spacing="3.5" fill="#B6AB9E" opacity="0.42">PLACEHOLDER ARTWORK · REPLACE WITH OFFICIAL PHOTO</text>
+</svg>
